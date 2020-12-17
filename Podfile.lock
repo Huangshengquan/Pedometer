@@ -1,0 +1,36 @@
+PODS:
+  - DCURLRouter (0.81)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Masonry (1.1.0)
+  - MJRefresh (3.5.0)
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+
+DEPENDENCIES:
+  - DCURLRouter
+  - FMDB
+  - Masonry
+  - MJRefresh
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - DCURLRouter
+    - FMDB
+    - Masonry
+    - MJRefresh
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  DCURLRouter: 6bb8d5c85390f5ce5a9966ad68e0e994a3e89b25
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+
+PODFILE CHECKSUM: da2783a7546d9c7732167ca9214641ca6ad68217
+
+COCOAPODS: 1.10.0
