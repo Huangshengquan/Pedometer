@@ -685,7 +685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3LK9UUXD3;
+				DEVELOPMENT_TEAM = R4FPWPRD8A;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Pedometer/PrefixHeader.pch";
 				INFOPLIST_FILE = Pedometer/Info.plist;

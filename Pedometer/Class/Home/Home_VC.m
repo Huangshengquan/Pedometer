@@ -8,7 +8,7 @@
 
 #import "Home_VC.h"
 
-@interface Home_VC ()<UITextFieldDelegate>
+@interface Home_VC ()<UITextFieldDelegate, UINavigationControllerDelegate>
 
 @end
 
@@ -21,6 +21,8 @@
     self.navigationController.title = @"首页";
     
     self.view.backgroundColor = UIColor.whiteColor;
+    
+    self.navigationController.delegate = self;
     
     
 //    NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
@@ -71,6 +73,19 @@
     }
     
     
+}
+
+#pragma mark - UINavigationControllerDelegate
+// 将要显示控制器
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    // 判断要显示的控制器是否是自己
+    BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
+    
+    [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
+}
+
+- (void)dealloc {
+    self.navigationController.delegate = nil;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
