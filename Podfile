@@ -13,7 +13,7 @@ target 'Pedometer' do
      
   pod 'MJRefresh'#(3.5.0)
   pod 'SDWebImage'#(5.9.4)
-  
+#  pod 'CMPedometer'
   
 end
 

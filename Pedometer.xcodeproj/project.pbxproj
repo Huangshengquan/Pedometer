@@ -28,6 +28,7 @@
 		1B75529724C02C6400F59EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75529624C02C6400F59EE0 /* main.m */; };
 		1B7552A124C02C6400F59EE0 /* PedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552A024C02C6400F59EE0 /* PedometerTests.m */; };
 		1B7552AC24C02C6400F59EE0 /* PedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552AB24C02C6400F59EE0 /* PedometerUITests.m */; };
+		1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7F0AB258B46350017C6B8 /* XCPageView.m */; };
 		97A578E4955546B80147A1FE /* libPods-Pedometer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,8 @@
 		1B7552C324C02FF800F59EE0 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		1B7552C424C0300700F59EE0 /* ConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacro.h; sourceTree = "<group>"; };
 		1B7552C524C0302200F59EE0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1BB7F0AA258B46350017C6B8 /* XCPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPageView.h; sourceTree = "<group>"; };
+		1BB7F0AB258B46350017C6B8 /* XCPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPageView.m; sourceTree = "<group>"; };
 		8273E4522B1F1F93AD8E4365 /* Pods-Pedometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.release.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.release.xcconfig"; sourceTree = "<group>"; };
 		DD060E998EA5491664711F91 /* Pods-Pedometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.debug.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.debug.xcconfig"; sourceTree = "<group>"; };
 		EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pedometer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,8 +170,9 @@
 		1B59376E255A3CFB007F3908 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1B59376F255A3D1B007F3908 /* Home_VC.h */,
-				1B593770255A3D1B007F3908 /* Home_VC.m */,
+				1BB7F0A6258B45D20017C6B8 /* Controller */,
+				1BB7F0A9258B45FC0017C6B8 /* View */,
+				1BB7F0A8258B45F40017C6B8 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -295,6 +299,31 @@
 			children = (
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		1BB7F0A6258B45D20017C6B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B59376F255A3D1B007F3908 /* Home_VC.h */,
+				1B593770255A3D1B007F3908 /* Home_VC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BB7F0A8258B45F40017C6B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BB7F0A9258B45FC0017C6B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7F0AA258B46350017C6B8 /* XCPageView.h */,
+				1BB7F0AB258B46350017C6B8 /* XCPageView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		67F2BD80A2BB69B1BA59303D /* Frameworks */ = {
@@ -494,6 +523,7 @@
 				1B59377C255A3D71007F3908 /* Second_VC.m in Sources */,
 				1B59375C2558DBA6007F3908 /* SQLiteManager.m in Sources */,
 				1B593782255A3D7F007F3908 /* Third_VC.m in Sources */,
+				1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */,
 				1B59376A255A3C41007F3908 /* TabBar_VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +699,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Pedometer/PrefixHeader.pch";
 				INFOPLIST_FILE = Pedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -689,6 +720,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Pedometer/PrefixHeader.pch";
 				INFOPLIST_FILE = Pedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
