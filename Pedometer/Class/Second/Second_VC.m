@@ -9,7 +9,7 @@
 #import "Second_VC.h"
 #import "Test_VC.h"
 
-@interface Second_VC ()
+@interface Second_VC ()<UINavigationControllerDelegate>
 
 @end
 
@@ -21,8 +21,24 @@
     
     self.view.backgroundColor = UIColor.whiteColor;
     
+    self.navigationController.delegate = self;
     
 }
+
+#pragma mark - UINavigationControllerDelegate
+// 将要显示控制器
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    // 判断要显示的控制器是否是自己
+    BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
+    
+    [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
+}
+
+- (void)dealloc {
+    self.navigationController.delegate = nil;
+}
+
+
 - (IBAction)goActions:(id)sender {
     
     Test_VC *vc = [[Test_VC alloc]init];

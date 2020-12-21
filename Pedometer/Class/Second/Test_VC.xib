@@ -85,6 +85,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                 </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="0mU-Gl-G5t">
+                    <rect key="frame" x="124" y="434" width="165" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.075918264690000001" green="0.41890648009999998" blue="0.8200250268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N0K-Te-KxE">
                     <rect key="frame" x="34" y="230" width="2" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
