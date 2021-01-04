@@ -277,14 +277,10 @@
     //判断结果集中是否有数据，如果有则取出数据
     while ([rs next]) {
         
-        //定义存放字段数据的字典
-        NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-
-        [dict setValue:[rs stringForColumn:@"name"] forKey:@"name"];
-        [dict setValue:[rs stringForColumn:@"score"] forKey:@"score"];
-        [dict setValue:[rs stringForColumn:@"sex"] forKey:@"sex"];
+        NSDictionary *dict = [rs resultDictionary];
 
         [dictArrM addObject:dict];
+        
     }
     
     NSLog(@"=====%@=====",dictArrM);

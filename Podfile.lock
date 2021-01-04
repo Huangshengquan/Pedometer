@@ -1,36 +1,66 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - DCURLRouter (0.81)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
   - SDWebImage (5.9.4):
     - SDWebImage/Core (= 5.9.4)
   - SDWebImage/Core (5.9.4)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
+  - AFNetworking
   - DCURLRouter
   - FMDB
+  - IQKeyboardManager
   - Masonry
+  - MBProgressHUD
   - MJRefresh
   - SDWebImage
+  - Toast
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - DCURLRouter
     - FMDB
+    - IQKeyboardManager
     - Masonry
+    - MBProgressHUD
     - MJRefresh
     - SDWebImage
+    - Toast
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   DCURLRouter: 6bb8d5c85390f5ce5a9966ad68e0e994a3e89b25
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: da2783a7546d9c7732167ca9214641ca6ad68217
+PODFILE CHECKSUM: 1ab53d9eb37307644373c6b5ca1d0284c95e3026
 
 COCOAPODS: 1.10.0

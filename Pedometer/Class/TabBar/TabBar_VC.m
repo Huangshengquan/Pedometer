@@ -10,8 +10,7 @@
 #import "NavView_VC.h"
 #import "Home_VC.h"
 #import "Second_VC.h"
-#import "Third_VC.h"
-
+#import "Mine_VC.h"
 
 @interface TabBar_VC ()
 
@@ -25,6 +24,12 @@
     
     self.tabBar.backgroundColor = UIColor.whiteColor;
     
+    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    
+    [[UITabBar appearance] setTranslucent:NO];
+    
+    self.selectedIndex = 0;
+    
     [self initView];
     
 }
@@ -37,9 +42,9 @@
     
     Home_VC *homeVC = [[Home_VC alloc] init];
     Second_VC *secondVC = [[Second_VC alloc] init];
-    Third_VC *thirdVC = [[Third_VC alloc] init];
+    Mine_VC *mineVC = [[Mine_VC alloc] init];
     
-    NSArray *viewController = @[homeVC, secondVC, thirdVC];
+    NSArray *viewController = @[homeVC, secondVC, mineVC];
     
     for (int i = 0; i < viewController.count; i++)
     {

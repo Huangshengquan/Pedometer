@@ -47,6 +47,7 @@ static XCUtils *_utils = nil;
     
     return ceil(textRect.size.width);
 }
+
 ///判断字符串中含有几个类型数据
 +(NSString *)checkIsHaveNumAndLetter:(NSString*)password{
     
@@ -85,6 +86,7 @@ static XCUtils *_utils = nil;
 
 }
 
+///获取当前时间的 年月日 时分秒
 + (NSString *)getCurrentHourMinuteSecond
 {
     
@@ -92,7 +94,7 @@ static XCUtils *_utils = nil;
     
     // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
     
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     
     //现在时间,你可以输出来看下是什么格式
     
@@ -108,6 +110,7 @@ static XCUtils *_utils = nil;
     
 }
 
+///获取当前时间的 年月日 时分
 + (NSString*)getCurrentHourMinute
 {
     
@@ -115,7 +118,7 @@ static XCUtils *_utils = nil;
     
     // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
     
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm"];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
     
     //现在时间,你可以输出来看下是什么格式
     
@@ -131,6 +134,7 @@ static XCUtils *_utils = nil;
     
 }
 
+///获取当前时间的 年
 + (NSString*)getCurrentYear
 {
     
@@ -138,7 +142,7 @@ static XCUtils *_utils = nil;
     
     // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
     
-    [formatter setDateFormat:@"YYYY"];
+    [formatter setDateFormat:@"yyyy"];
     
     //现在时间,你可以输出来看下是什么格式
     
@@ -154,6 +158,7 @@ static XCUtils *_utils = nil;
     
 }
 
+///获取当前时间的 年月
 + (NSString*)getCurrentYearMonth
 {
     
@@ -161,7 +166,7 @@ static XCUtils *_utils = nil;
     
     // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
     
-    [formatter setDateFormat:@"YYYY-MM"];
+    [formatter setDateFormat:@"yyyy-MM"];
     
     //现在时间,你可以输出来看下是什么格式
     
@@ -177,6 +182,7 @@ static XCUtils *_utils = nil;
     
 }
 
+///获取当前时间的 年月日
 + (NSString*)getCurrentYearMonthDay
 {
     
@@ -184,7 +190,7 @@ static XCUtils *_utils = nil;
     
     // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
     
-    [formatter setDateFormat:@"YYYY-MM-dd"];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
     
     //现在时间,你可以输出来看下是什么格式
     
@@ -200,7 +206,7 @@ static XCUtils *_utils = nil;
     
 }
 
-//比较两个日期的大小  日期格式为2016-08-14 08：46：20
+///比较两个日期的大小  日期格式为2016-08-14 08：46：20
 + (NSInteger)compareDate:(NSString*)aDate withDate:(NSString*)bDate
 {
     NSInteger aa = 0;
@@ -344,6 +350,77 @@ static XCUtils *_utils = nil;
     return [NSString stringWithFormat:@"%@时%@分%@秒",hoursStr , minutesStr,secondsStr];
 }
 
+- (void)countDownButton:(UIButton *)btn
+                 title:(NSString *)title
+        countDownTitle:(NSString *)subTitle
+            startColor:(UIColor *)sColor
+              endColor:(UIColor *)eColor
+                 downTime:(NSInteger )downTime
+               timeType:(NSInteger )type
+{
+    
+    if (_timer == nil) {
+        
+        __block NSInteger timeOut = downTime; // 倒计时时间
+        
+        if (timeOut!=0) {
+            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+            dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), 1.0*NSEC_PER_SEC,  0); //每秒执行
+            dispatch_source_set_event_handler(_timer, ^{
+                if(timeOut <= 0){ //  当倒计时结束时做需要的操作: 关闭 活动到期不能提交
+                    dispatch_source_cancel(self->_timer);
+                    self->_timer = nil;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        [btn setTitle:title forState:UIControlStateNormal];
+                        btn.backgroundColor = sColor;
+                        
+                    });
+                } else {
+                    // 倒计时重新计算 时/分/秒
+                    NSInteger days = (int)(timeOut/(3600*24));
+                    NSInteger hours = (int)((timeOut-days*24*3600)/3600);
+                    NSInteger minute = (int)(timeOut-days*24*3600-hours*3600)/60;
+                    NSInteger second = timeOut - days*24*3600 - hours*3600 - minute*60;
+                    NSString *strTime = @"";
+                    
+                    if (type == 1) {
+                        if (days != 1) {
+                            strTime = [NSString stringWithFormat:@"%ld天 %02ld : %02ld : %02ld", days, hours, minute, second];
+                        } else {
+                            strTime = [NSString stringWithFormat:@"%02ld : %02ld : %02ld", hours, minute, second];
+                        }
+                        
+                    } else if (type == 2) {
+                        
+                        strTime = [NSString stringWithFormat:@"%02ld : %02ld : %02ld", hours, minute, second];
+                        
+                    } else if (type == 3) {
+                        
+                        strTime = [NSString stringWithFormat:@"%02ld", timeOut];
+                        
+                    }else{
+                        
+                        strTime = [NSString stringWithFormat:@"%02ld", timeOut];
+                        
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        [btn setTitle:strTime forState:UIControlStateNormal];
+                        btn.backgroundColor = eColor;
+                        
+                    });
+                    
+                    timeOut--; // 递减 倒计时-1(总时间以秒来计算)
+                }
+            });
+            dispatch_resume(_timer);
+        }
+    }
+    
+}
 
 
 @end

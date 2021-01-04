@@ -1,0 +1,92 @@
+2020-12-22   星期二
+
+UIView生命周期
+    一、常用方法
+        1、- (void)didAddSubview:(UIView *)subview;
+        2、- (void)willRemoveSubview:(UIView *)subview;
+        3、- (void)willMoveToSuperview:(nullable UIView *)newSuperview;
+        4、- (void)didMoveToSuperview;
+        5、- (void)willMoveToWindow:(nullable UIWindow *)newWindow;
+        6、- (void)didMoveToWindow;
+        
+    二、常见的构造函数，析构函数
+        1、- (instancetype)init;
+        2、- (void)dealloc;
+        3、- (void)removeFromSuperview;
+        4、- (void)drawRect:(CGRect)rect;
+        5、- (void)layoutSubviews;
+        
+    若UIView没有subView，那么didAddSubview和willRemoveSubview都不会调用
+    无论是添加还是移除，都会调用will和did两个方法
+
+UIViewController加载的生命周期及先后顺序：
+    1、viewDidLoad ：对于各种初始数据的载入，初始设定等很多内容，都在这个方法中实现
+
+    2、viewDidUnload ：在内存足够的情况下，软件的视图通常会一直保存在内存中，但是如果内存不够，一些没有正在显示的UIViewController就会收到内存不够的警告，然后就会释放自己拥有的视图，以达到释放内存的目的。但是系统只会释放内存，并不会释放对象的所有权，所以通常我们需要在这里将不需要在内存中保留的对象释放所有权，也就是将其指针置为nil。
+
+    3、viewWillAppear ：即将显示的视图做进一步的设置，通常做于界面数据的刷新
+
+    4、viewDidAppear ：视图已在屏幕上渲染完成
+
+    5、viewWillDisappear ：视图将被从屏幕上移除之前执行，用于做一些隐藏操作
+
+    6、viewDisappear ：视图已经被从屏幕上移除，用户看不到这个视图了
+
+    7、dealloc ：视图被销毁，此处需要对你在init和viewDidLoad中创建的对象进行释放
+
+UIViewController 上显示 UIView 的两种动画效果
+    一、animateWithDuration方法来实现动画效果
+        1、+ (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations
+        2、+ (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion
+        3、+ (void)animateWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion
+        
+        duration：为动画持续的时间。
+        animations：为动画效果的代码块。
+        completion：为动画执行完毕以后执行的代码块
+        options：为动画执行的选项。可以参考这里
+        delay：为动画开始执行前等待的时间
+        
+        视图出现：
+            [_contentView setFrame:CGRectMake(0, ViewHeight, MainScreen_Width, BounceViewHight)];
+    
+            [UIView animateWithDuration:0.3 animations:^{
+                
+                self.alpha = 1.0;
+                //从底部缓慢上升
+                [self->_contentView setFrame:CGRectMake(0, ViewHeight - BounceViewHight, MainScreen_Width, BounceViewHight)];
+                
+            } completion:nil];
+            
+            视图消失：
+                [_contentView setFrame:CGRectMake(0, ViewHeight - BounceViewHight, MainScreen_Width, BounceViewHight)];
+    
+                [UIView animateWithDuration:0.3f
+                                 animations:^{
+                                     
+                                     self.alpha = 0.0;
+                                    //从上面缓慢下降
+                                     [self->_contentView setFrame:CGRectMake(0, ViewHeight, MainScreen_Width, BounceViewHight)];
+                                 }
+                                 completion:^(BOOL finished){//下降完成，需要将视图移除
+                                     
+                                     [self removeFromSuperview];
+                                     
+                                     [self->_contentView removeFromSuperview];
+                                     
+                                 }];
+                                 
+    二、相对移动(CGAffineTransformMakeTranslation())实现动画
+        1.相对平移
+            UIview.transform = CGAffineTransformMakeTranslation(0, DeviceHeight + 200);\\( CGFloat tx,CGFloat ty)
+            这是一个实现相对位移的函数,只要我们记住相对的是“屏幕的左上角(以左上角为相对移动的(0,0)点)”，每次的移动都是相对 原点 进行移动的
+            
+        2.相对旋转
+            CGAffineTransformCGAffineTransformMakeRotation(CGFloatangle) // 使用这个函数可以实现(view)华丽的旋转
+ 
+
+
+
+
+
+
+

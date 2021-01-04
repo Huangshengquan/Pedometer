@@ -54,6 +54,7 @@ static const int ImageViewCount = 3;
     self.scrollView.bounces = YES;
     self.scrollView.alwaysBounceVertical = NO;
     self.scrollView.pagingEnabled = YES;//设置分页属性
+    self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     if (@available(iOS 13.0, *)) {
         
     } else {
@@ -76,7 +77,7 @@ static const int ImageViewCount = 3;
  *  处理点击事件
  */
 - (void)tap:(UITapGestureRecognizer *)gesture {
-    if ([self.delegate respondsToSelector:@selector(pageViewDidClick:atCurrentPage:)]) {
+    if (_delegate && [_delegate respondsToSelector:@selector(pageViewDidClick:atCurrentPage:)]) {
         [self.delegate pageViewDidClick:self atCurrentPage:self.pageControl.currentPage];
     };
 }
@@ -110,7 +111,7 @@ static const int ImageViewCount = 3;
         UIImageView *imageView = [[UIImageView alloc] init];
         imageView.image = [UIImage imageNamed:imagesName[index]];
         imageView.contentMode = UIViewContentModeScaleAspectFill;//使图片充满整个UIImageView控件
-        // 给tag加值，用于在后面取出判断pageControl的当前页
+        //给tag加值，用于在后面取出判断pageControl的当前页
         imageView.tag = i;
         
         [self.scrollView addSubview:imageView];
@@ -192,7 +193,7 @@ static const int ImageViewCount = 3;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSInteger page = 0;
 
-    NSLog(@"--------- %f",scrollView.contentOffset.y);
+//    NSLog(@"--------- %f",scrollView.contentOffset.y);
     // 找出应该在中间的那个UIImageView是第几个，然后设置pageControl的当前页
     CGFloat minDistance = MAXFLOAT;
     for (int i = 0; i < self.scrollView.subviews.count; i++) {

@@ -15,5 +15,13 @@
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
 #import "XCUtils.h"
+#import "Macro.h"
+#import "ConfigMacro.h"
+#import "ColorMacro.h"
+#import "UIView+Toast.h"
+#import "MJRefresh.h"
+#import "XCProgress.h"
+#import "DCURLRouter.h"
+#import "BaseViewController.h"
 
 #endif /* XCPedometer_pch */

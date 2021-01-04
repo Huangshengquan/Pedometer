@@ -4,8 +4,12 @@ target 'Pedometer' do
   inhibit_all_warnings!
 
   pod 'Masonry'
+  pod 'Toast'
   pod 'DCURLRouter'
   pod 'FMDB'
+  pod 'AFNetworking'
+  pod 'MBProgressHUD'
+  pod 'IQKeyboardManager'
      # pod 'FMDB/FTS'   # FMDB with FTS
      # pod 'FMDB/standalone'   # FMDB with latest SQLite amalgamation source
      # pod 'FMDB/standalone/FTS'   # FMDB with latest SQLite amalgamation source and FTS

@@ -57,6 +57,7 @@
 #define GET_BOTTOM_Y(view) (view.frame.origin.y + view.frame.size.height )
 #define GET_LEFT_X(view) (view.frame.origin.x + view.frame.size.width)
 
+
 /**
  *颜色
  */
@@ -66,7 +67,13 @@
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
 //背景灰
-#define mbgColor RGBCOLOR(239, 239, 241)
+#define mbgColor         RGBCOLOR(239, 239, 241)
+
+//主题蓝
+#define Main_Blue        RGBCOLOR(14, 97, 199)
+
+//按钮颜色(灰)
+#define Main_Gray        RGBCOLOR(170, 170, 170)
 
 
 #endif /* ColorMacro_h */

@@ -12,7 +12,6 @@
 
 
 
-
 /**
 *  完美解决Xcode NSLog打印不全的宏
 */
@@ -25,7 +24,7 @@ NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Beijing"];\
 [dateFormatter setTimeZone:timeZone];\
 [dateFormatter setDateFormat:@"HH:mm:ss.SSSSSSZ"];\
 NSString *str = [dateFormatter stringFromDate:[NSDate date]];\
-fprintf(stderr,"--TIME：%s【FILE：%s--LINE：%d】FUNCTION：%s\n%s\n",[str UTF8String],[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__,__PRETTY_FUNCTION__,[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
+fprintf(stderr,"\n --TIME：%s %s:%d   %s\n",[str UTF8String],[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__, [[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]);\
 }
 #else
 # define NSLog(...);
@@ -53,6 +52,20 @@ fprintf(stderr,"--TIME：%s【FILE：%s--LINE：%d】FUNCTION：%s\n%s\n",[str U
 #define APPLICATION ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 #define Window_key   [UIApplication sharedApplication].keyWindow
+
+
+#pragma mark - 用于Jason字段取值后赋值
+#define MySetValue(dict, value) ((!dict[value] || [dict[value] isKindOfClass:[NSNull class]])?@"":dict[value])
+#define MySetValueNumber(dict, value) ((!dict[value] || [dict[value] isKindOfClass:[NSNull class]])?@0:dict[value])
+#define MySetStr(value) (!value || [value isKindOfClass:[NSNull class]])?@"":value
+
+
+
+
+
+#pragma mark - 通知事件的名字
+
+#define CHOOSEROOTVC            @"chooseRootVC"
 
 
 #endif /* ConfigMacro_h */

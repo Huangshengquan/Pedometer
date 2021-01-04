@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0BFAC92580622000C232E2 /* Test_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFAC72580622000C232E2 /* Test_VC.m */; };
-		1B0BFACA2580622000C232E2 /* Test_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BFAC82580622000C232E2 /* Test_VC.xib */; };
 		1B0BFACF2580660E00C232E2 /* Second_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BFACE2580660E00C232E2 /* Second_VC.xib */; };
 		1B53434325848ABD004BA8BA /* XCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B53434225848ABD004BA8BA /* XCUtils.m */; };
 		1B59374B2554FD86007F3908 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B59374A2554FD86007F3908 /* libsqlite3.0.tbd */; };
@@ -17,7 +15,7 @@
 		1B59376A255A3C41007F3908 /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
 		1B593771255A3D1B007F3908 /* Home_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593770255A3D1B007F3908 /* Home_VC.m */; };
 		1B59377C255A3D71007F3908 /* Second_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59377B255A3D71007F3908 /* Second_VC.m */; };
-		1B593782255A3D7F007F3908 /* Third_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593781255A3D7F007F3908 /* Third_VC.m */; };
+		1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593781255A3D7F007F3908 /* Mine_VC.m */; };
 		1B593788255A4181007F3908 /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
 		1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5937B6255A69BD007F3908 /* BaseTableViewCell.m */; };
 		1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
@@ -28,7 +26,23 @@
 		1B75529724C02C6400F59EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75529624C02C6400F59EE0 /* main.m */; };
 		1B7552A124C02C6400F59EE0 /* PedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552A024C02C6400F59EE0 /* PedometerTests.m */; };
 		1B7552AC24C02C6400F59EE0 /* PedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552AB24C02C6400F59EE0 /* PedometerUITests.m */; };
+		1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA40B1425A306090038BEAF /* DCURLRouter.plist */; };
+		1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */; };
+		1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D65125A2CE44009FFFCC /* Forget_VC.m */; };
+		1BB407472591825D003EF042 /* Mynote in Resources */ = {isa = PBXBuildFile; fileRef = 1BB407462591825D003EF042 /* Mynote */; };
+		1BB407532591C888003EF042 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB407522591C888003EF042 /* WaterWaveView.m */; };
 		1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7F0AB258B46350017C6B8 /* XCPageView.m */; };
+		1BD8AFAA25A30AC700C1A269 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AFA925A30AC700C1A269 /* BaseViewController.m */; };
+		1BD8AFB025A30E8300C1A269 /* Third_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AFAF25A30E8300C1A269 /* Third_VC.m */; };
+		1BF5D2422591F9AE00044C27 /* XCWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */; };
+		1BF5D2B72594867700044C27 /* XCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2B62594867700044C27 /* XCNetworking.m */; };
+		1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */; };
+		1BF5D2DC25949C6D00044C27 /* XCProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2DB25949C6D00044C27 /* XCProgress.m */; };
+		1BF5D2EB2595851000044C27 /* XCHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2EA2595851000044C27 /* XCHttpRequest.m */; };
+		1BF5D319259ABBF300044C27 /* Login_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D318259ABBF300044C27 /* Login_VC.m */; };
+		1BF5D322259ABC0A00044C27 /* Register_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D321259ABC0A00044C27 /* Register_VC.m */; };
+		1BF5D350259C14D700044C27 /* UserInfo_DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D34F259C14D600044C27 /* UserInfo_DB.m */; };
+		1BF5D35A259C150300044C27 /* BaseDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D359259C150300044C27 /* BaseDB.m */; };
 		97A578E4955546B80147A1FE /* libPods-Pedometer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B0BFAC62580622000C232E2 /* Test_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_VC.h; sourceTree = "<group>"; };
-		1B0BFAC72580622000C232E2 /* Test_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_VC.m; sourceTree = "<group>"; };
-		1B0BFAC82580622000C232E2 /* Test_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test_VC.xib; sourceTree = "<group>"; };
 		1B0BFACE2580660E00C232E2 /* Second_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Second_VC.xib; sourceTree = "<group>"; };
 		1B53434125848ABD004BA8BA /* XCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUtils.h; sourceTree = "<group>"; };
 		1B53434225848ABD004BA8BA /* XCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCUtils.m; sourceTree = "<group>"; };
@@ -68,8 +79,8 @@
 		1B593770255A3D1B007F3908 /* Home_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home_VC.m; sourceTree = "<group>"; };
 		1B59377A255A3D71007F3908 /* Second_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Second_VC.h; sourceTree = "<group>"; };
 		1B59377B255A3D71007F3908 /* Second_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Second_VC.m; sourceTree = "<group>"; };
-		1B593780255A3D7F007F3908 /* Third_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third_VC.h; sourceTree = "<group>"; };
-		1B593781255A3D7F007F3908 /* Third_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Third_VC.m; sourceTree = "<group>"; };
+		1B593780255A3D7F007F3908 /* Mine_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mine_VC.h; sourceTree = "<group>"; };
+		1B593781255A3D7F007F3908 /* Mine_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mine_VC.m; sourceTree = "<group>"; };
 		1B593786255A4181007F3908 /* NavView_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavView_VC.h; sourceTree = "<group>"; };
 		1B593787255A4181007F3908 /* NavView_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavView_VC.m; sourceTree = "<group>"; };
 		1B5937B5255A69BD007F3908 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -93,9 +104,38 @@
 		1B7552BF24C02FB000F59EE0 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		1B7552C324C02FF800F59EE0 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		1B7552C424C0300700F59EE0 /* ConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacro.h; sourceTree = "<group>"; };
-		1B7552C524C0302200F59EE0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1BA40B1425A306090038BEAF /* DCURLRouter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
+		1BA4D63925A2A711009FFFCC /* UserInfoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoEntity.h; sourceTree = "<group>"; };
+		1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoEntity.m; sourceTree = "<group>"; };
+		1BA4D65025A2CE44009FFFCC /* Forget_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forget_VC.h; sourceTree = "<group>"; };
+		1BA4D65125A2CE44009FFFCC /* Forget_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Forget_VC.m; sourceTree = "<group>"; };
+		1BB407462591825D003EF042 /* Mynote */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mynote; sourceTree = "<group>"; };
+		1BB407512591C888003EF042 /* WaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
+		1BB407522591C888003EF042 /* WaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
 		1BB7F0AA258B46350017C6B8 /* XCPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPageView.h; sourceTree = "<group>"; };
 		1BB7F0AB258B46350017C6B8 /* XCPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPageView.m; sourceTree = "<group>"; };
+		1BD8AFA825A30AC700C1A269 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1BD8AFA925A30AC700C1A269 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1BD8AFAE25A30E8300C1A269 /* Third_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third_VC.h; sourceTree = "<group>"; };
+		1BD8AFAF25A30E8300C1A269 /* Third_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Third_VC.m; sourceTree = "<group>"; };
+		1BF5D2402591F9AE00044C27 /* XCWaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCWaterWaveView.h; sourceTree = "<group>"; };
+		1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCWaterWaveView.m; sourceTree = "<group>"; };
+		1BF5D2B52594867700044C27 /* XCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCNetworking.h; sourceTree = "<group>"; };
+		1BF5D2B62594867700044C27 /* XCNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCNetworking.m; sourceTree = "<group>"; };
+		1BF5D2BC25948C8900044C27 /* XCHudDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHudDemoView.h; sourceTree = "<group>"; };
+		1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHudDemoView.m; sourceTree = "<group>"; };
+		1BF5D2DA25949C6D00044C27 /* XCProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCProgress.h; sourceTree = "<group>"; };
+		1BF5D2DB25949C6D00044C27 /* XCProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCProgress.m; sourceTree = "<group>"; };
+		1BF5D2E92595851000044C27 /* XCHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHttpRequest.h; sourceTree = "<group>"; };
+		1BF5D2EA2595851000044C27 /* XCHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHttpRequest.m; sourceTree = "<group>"; };
+		1BF5D317259ABBF300044C27 /* Login_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login_VC.h; sourceTree = "<group>"; };
+		1BF5D318259ABBF300044C27 /* Login_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login_VC.m; sourceTree = "<group>"; };
+		1BF5D320259ABC0A00044C27 /* Register_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Register_VC.h; sourceTree = "<group>"; };
+		1BF5D321259ABC0A00044C27 /* Register_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Register_VC.m; sourceTree = "<group>"; };
+		1BF5D34E259C14D600044C27 /* UserInfo_DB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo_DB.h; sourceTree = "<group>"; };
+		1BF5D34F259C14D600044C27 /* UserInfo_DB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo_DB.m; sourceTree = "<group>"; };
+		1BF5D358259C150300044C27 /* BaseDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDB.h; sourceTree = "<group>"; };
+		1BF5D359259C150300044C27 /* BaseDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDB.m; sourceTree = "<group>"; };
 		8273E4522B1F1F93AD8E4365 /* Pods-Pedometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.release.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.release.xcconfig"; sourceTree = "<group>"; };
 		DD060E998EA5491664711F91 /* Pods-Pedometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.debug.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.debug.xcconfig"; sourceTree = "<group>"; };
 		EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pedometer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,23 +220,19 @@
 		1B593778255A3D2A007F3908 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				1B59377A255A3D71007F3908 /* Second_VC.h */,
-				1B59377B255A3D71007F3908 /* Second_VC.m */,
-				1B0BFACE2580660E00C232E2 /* Second_VC.xib */,
-				1B0BFAC62580622000C232E2 /* Test_VC.h */,
-				1B0BFAC72580622000C232E2 /* Test_VC.m */,
-				1B0BFAC82580622000C232E2 /* Test_VC.xib */,
+				1BA4D64625A2AD31009FFFCC /* Controller */,
+				1BA4D64725A2AD40009FFFCC /* View */,
 			);
 			path = Second;
 			sourceTree = "<group>";
 		};
-		1B593779255A3D39007F3908 /* Third */ = {
+		1B593779255A3D39007F3908 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				1B593780255A3D7F007F3908 /* Third_VC.h */,
-				1B593781255A3D7F007F3908 /* Third_VC.m */,
+				1BA4D64925A2AD54009FFFCC /* Controller */,
+				1BA4D64825A2AD4E009FFFCC /* View */,
 			);
-			path = Third;
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		1B59379A255A6255007F3908 /* BaseClass */ = {
@@ -204,6 +240,8 @@
 			children = (
 				1B5937B5255A69BD007F3908 /* BaseTableViewCell.h */,
 				1B5937B6255A69BD007F3908 /* BaseTableViewCell.m */,
+				1BD8AFA825A30AC700C1A269 /* BaseViewController.h */,
+				1BD8AFA925A30AC700C1A269 /* BaseViewController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -235,19 +273,23 @@
 			children = (
 				1B75528424C02C6300F59EE0 /* AppDelegate.h */,
 				1B75528524C02C6300F59EE0 /* AppDelegate.m */,
-				1B7552C524C0302200F59EE0 /* PrefixHeader.pch */,
 				1B75528A24C02C6300F59EE0 /* ViewController.h */,
 				1B75528B24C02C6300F59EE0 /* ViewController.m */,
 				1B53434C258491D8004BA8BA /* XCPedometer.pch */,
 				1B53434A2584916B004BA8BA /* Test */,
 				1B7552BC24C02EF000F59EE0 /* Common */,
+				1BA40B1025A2ED600038BEAF /* Category */,
 				1B7552BE24C02F2200F59EE0 /* Library */,
 				1B59379A255A6255007F3908 /* BaseClass */,
+				1BF5D34D259C12F300044C27 /* DB */,
+				1BA4D63F25A2A71C009FFFCC /* Entity */,
 				1B7552BD24C02F0800F59EE0 /* Class */,
+				1BB40740259180C4003EF042 /* Note */,
 				1B75528D24C02C6300F59EE0 /* Main.storyboard */,
 				1B75529024C02C6400F59EE0 /* Assets.xcassets */,
 				1B75529224C02C6400F59EE0 /* LaunchScreen.storyboard */,
 				1B75529524C02C6400F59EE0 /* Info.plist */,
+				1BA40B1425A306090038BEAF /* DCURLRouter.plist */,
 				1B75529624C02C6400F59EE0 /* main.m */,
 			);
 			path = Pedometer;
@@ -288,7 +330,8 @@
 			children = (
 				1B59376E255A3CFB007F3908 /* Home */,
 				1B593778255A3D2A007F3908 /* Second */,
-				1B593779255A3D39007F3908 /* Third */,
+				1B593779255A3D39007F3908 /* Mine */,
+				1BF5D316259ABB8000044C27 /* Login */,
 				1B593767255A35B3007F3908 /* TabBar */,
 			);
 			path = Class;
@@ -297,8 +340,96 @@
 		1B7552BE24C02F2200F59EE0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				1BF5D2BB25948B9400044C27 /* Networking */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		1BA40B1025A2ED600038BEAF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1BA4D63625A2A69A009FFFCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5D317259ABBF300044C27 /* Login_VC.h */,
+				1BF5D318259ABBF300044C27 /* Login_VC.m */,
+				1BF5D320259ABC0A00044C27 /* Register_VC.h */,
+				1BF5D321259ABC0A00044C27 /* Register_VC.m */,
+				1BA4D65025A2CE44009FFFCC /* Forget_VC.h */,
+				1BA4D65125A2CE44009FFFCC /* Forget_VC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BA4D63725A2A6A6009FFFCC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1BA4D63925A2A711009FFFCC /* UserInfoEntity.h */,
+				1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1BA4D63825A2A6AD009FFFCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BA4D63F25A2A71C009FFFCC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1BA4D63725A2A6A6009FFFCC /* Login */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1BA4D64625A2AD31009FFFCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B59377A255A3D71007F3908 /* Second_VC.h */,
+				1B59377B255A3D71007F3908 /* Second_VC.m */,
+				1B0BFACE2580660E00C232E2 /* Second_VC.xib */,
+				1BD8AFAE25A30E8300C1A269 /* Third_VC.h */,
+				1BD8AFAF25A30E8300C1A269 /* Third_VC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BA4D64725A2AD40009FFFCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BA4D64825A2AD4E009FFFCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BA4D64925A2AD54009FFFCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B593780255A3D7F007F3908 /* Mine_VC.h */,
+				1B593781255A3D7F007F3908 /* Mine_VC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BB40740259180C4003EF042 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				1BB407462591825D003EF042 /* Mynote */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 		1BB7F0A6258B45D20017C6B8 /* Controller */ = {
@@ -322,8 +453,47 @@
 			children = (
 				1BB7F0AA258B46350017C6B8 /* XCPageView.h */,
 				1BB7F0AB258B46350017C6B8 /* XCPageView.m */,
+				1BB407512591C888003EF042 /* WaterWaveView.h */,
+				1BB407522591C888003EF042 /* WaterWaveView.m */,
+				1BF5D2402591F9AE00044C27 /* XCWaterWaveView.h */,
+				1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1BF5D2BB25948B9400044C27 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5D2B52594867700044C27 /* XCNetworking.h */,
+				1BF5D2B62594867700044C27 /* XCNetworking.m */,
+				1BF5D2E92595851000044C27 /* XCHttpRequest.h */,
+				1BF5D2EA2595851000044C27 /* XCHttpRequest.m */,
+				1BF5D2DA25949C6D00044C27 /* XCProgress.h */,
+				1BF5D2DB25949C6D00044C27 /* XCProgress.m */,
+				1BF5D2BC25948C8900044C27 /* XCHudDemoView.h */,
+				1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1BF5D316259ABB8000044C27 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1BA4D63625A2A69A009FFFCC /* Controller */,
+				1BA4D63825A2A6AD009FFFCC /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1BF5D34D259C12F300044C27 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5D358259C150300044C27 /* BaseDB.h */,
+				1BF5D359259C150300044C27 /* BaseDB.m */,
+				1BF5D34E259C14D600044C27 /* UserInfo_DB.h */,
+				1BF5D34F259C14D600044C27 /* UserInfo_DB.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		67F2BD80A2BB69B1BA59303D /* Frameworks */ = {
@@ -441,7 +611,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0BFACF2580660E00C232E2 /* Second_VC.xib in Resources */,
-				1B0BFACA2580622000C232E2 /* Test_VC.xib in Resources */,
+				1BB407472591825D003EF042 /* Mynote in Resources */,
+				1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */,
 				1B75529424C02C6400F59EE0 /* LaunchScreen.storyboard in Resources */,
 				1B75529124C02C6400F59EE0 /* Assets.xcassets in Resources */,
 				1B75528F24C02C6300F59EE0 /* Main.storyboard in Resources */,
@@ -512,17 +683,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */,
+				1BF5D2B72594867700044C27 /* XCNetworking.m in Sources */,
 				1B75528C24C02C6300F59EE0 /* ViewController.m in Sources */,
+				1BF5D35A259C150300044C27 /* BaseDB.m in Sources */,
 				1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */,
+				1BF5D350259C14D700044C27 /* UserInfo_DB.m in Sources */,
 				1B75529724C02C6400F59EE0 /* main.m in Sources */,
 				1B59375125552424007F3908 /* DBManager.m in Sources */,
+				1BF5D319259ABBF300044C27 /* Login_VC.m in Sources */,
+				1BD8AFAA25A30AC700C1A269 /* BaseViewController.m in Sources */,
 				1B53434325848ABD004BA8BA /* XCUtils.m in Sources */,
-				1B0BFAC92580622000C232E2 /* Test_VC.m in Sources */,
+				1BB407532591C888003EF042 /* WaterWaveView.m in Sources */,
+				1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */,
 				1B593771255A3D1B007F3908 /* Home_VC.m in Sources */,
+				1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */,
+				1BF5D2EB2595851000044C27 /* XCHttpRequest.m in Sources */,
+				1BD8AFB025A30E8300C1A269 /* Third_VC.m in Sources */,
 				1B593788255A4181007F3908 /* NavView_VC.m in Sources */,
+				1BF5D322259ABC0A00044C27 /* Register_VC.m in Sources */,
+				1BF5D2422591F9AE00044C27 /* XCWaterWaveView.m in Sources */,
+				1BF5D2DC25949C6D00044C27 /* XCProgress.m in Sources */,
 				1B59377C255A3D71007F3908 /* Second_VC.m in Sources */,
 				1B59375C2558DBA6007F3908 /* SQLiteManager.m in Sources */,
-				1B593782255A3D7F007F3908 /* Third_VC.m in Sources */,
+				1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */,
+				1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */,
 				1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */,
 				1B59376A255A3C41007F3908 /* TabBar_VC.m in Sources */,
 			);
@@ -697,7 +881,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4FPWPRD8A;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Pedometer/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Pedometer/XCPedometer.pch";
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -718,7 +902,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4FPWPRD8A;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Pedometer/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Pedometer/XCPedometer.pch";
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

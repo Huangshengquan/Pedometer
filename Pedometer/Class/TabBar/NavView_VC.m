@@ -36,18 +36,18 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    
+
     if (self.viewControllers.count > 0) {
         // 此时push进来的viewController是第二个子控制器
         // 自动隐藏tabbar
         viewController.hidesBottomBarWhenPushed = YES;
-        
+
         viewController.navigationItem.leftBarButtonItem = [self itemWithTargat:self action:@selector(back) image:@"return_gray" highImage:@"return_gray"];
 
     }else{
         viewController.hidesBottomBarWhenPushed = NO;
     }
-    
+
     [super pushViewController:viewController animated:animated];
 }
 
