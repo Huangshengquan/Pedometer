@@ -16,7 +16,6 @@
 		1B59377C255A3D71007F3908 /* Second_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59377B255A3D71007F3908 /* Second_VC.m */; };
 		1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593781255A3D7F007F3908 /* Mine_VC.m */; };
 		1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5937B6255A69BD007F3908 /* BaseTableViewCell.m */; };
-		1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
 		1B75528F24C02C6300F59EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75528D24C02C6300F59EE0 /* Main.storyboard */; };
 		1B75529124C02C6400F59EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B75529024C02C6400F59EE0 /* Assets.xcassets */; };
 		1B75529424C02C6400F59EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75529224C02C6400F59EE0 /* LaunchScreen.storyboard */; };
@@ -25,6 +24,7 @@
 		1B7552AC24C02C6400F59EE0 /* PedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552AB24C02C6400F59EE0 /* PedometerUITests.m */; };
 		1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
 		1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
+		1B7F0C9125A404C500D35CFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
 		1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA40B1425A306090038BEAF /* DCURLRouter.plist */; };
 		1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */; };
 		1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D65125A2CE44009FFFCC /* Forget_VC.m */; };
@@ -254,6 +254,7 @@
 				67F2BD80A2BB69B1BA59303D /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		1B75528224C02C6300F59EE0 /* Products */ = {
 			isa = PBXGroup;
@@ -678,7 +679,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */,
-				1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */,
 				1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */,
 				1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */,
 				1BF5D2B72594867700044C27 /* XCNetworking.m in Sources */,
@@ -698,6 +698,7 @@
 				1BF5D322259ABC0A00044C27 /* Register_VC.m in Sources */,
 				1BF5D2422591F9AE00044C27 /* XCWaterWaveView.m in Sources */,
 				1BF5D2DC25949C6D00044C27 /* XCProgress.m in Sources */,
+				1B7F0C9125A404C500D35CFC /* AppDelegate.m in Sources */,
 				1B59377C255A3D71007F3908 /* Second_VC.m in Sources */,
 				1B59375C2558DBA6007F3908 /* SQLiteManager.m in Sources */,
 				1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */,

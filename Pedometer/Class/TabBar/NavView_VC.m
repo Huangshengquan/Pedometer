@@ -25,7 +25,7 @@
     [self.navigationBar setShadowImage:[UIImage new]];
 
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.navigationBar.barTintColor = RGBCOLOR(14, 97, 199);
+    self.navigationBar.barTintColor = Main_Blue;
     
 }
 
