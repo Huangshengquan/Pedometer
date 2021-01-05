@@ -12,20 +12,19 @@
 		1B59374B2554FD86007F3908 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B59374A2554FD86007F3908 /* libsqlite3.0.tbd */; };
 		1B59375125552424007F3908 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59375025552424007F3908 /* DBManager.m */; };
 		1B59375C2558DBA6007F3908 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59375B2558DBA6007F3908 /* SQLiteManager.m */; };
-		1B59376A255A3C41007F3908 /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
 		1B593771255A3D1B007F3908 /* Home_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593770255A3D1B007F3908 /* Home_VC.m */; };
 		1B59377C255A3D71007F3908 /* Second_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59377B255A3D71007F3908 /* Second_VC.m */; };
 		1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593781255A3D7F007F3908 /* Mine_VC.m */; };
-		1B593788255A4181007F3908 /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
 		1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5937B6255A69BD007F3908 /* BaseTableViewCell.m */; };
 		1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
-		1B75528C24C02C6300F59EE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528B24C02C6300F59EE0 /* ViewController.m */; };
 		1B75528F24C02C6300F59EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75528D24C02C6300F59EE0 /* Main.storyboard */; };
 		1B75529124C02C6400F59EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B75529024C02C6400F59EE0 /* Assets.xcassets */; };
 		1B75529424C02C6400F59EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75529224C02C6400F59EE0 /* LaunchScreen.storyboard */; };
 		1B75529724C02C6400F59EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75529624C02C6400F59EE0 /* main.m */; };
 		1B7552A124C02C6400F59EE0 /* PedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552A024C02C6400F59EE0 /* PedometerTests.m */; };
 		1B7552AC24C02C6400F59EE0 /* PedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7552AB24C02C6400F59EE0 /* PedometerUITests.m */; };
+		1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
+		1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
 		1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA40B1425A306090038BEAF /* DCURLRouter.plist */; };
 		1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */; };
 		1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D65125A2CE44009FFFCC /* Forget_VC.m */; };
@@ -88,8 +87,6 @@
 		1B75528124C02C6300F59EE0 /* Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B75528424C02C6300F59EE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B75528524C02C6300F59EE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B75528A24C02C6300F59EE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B75528B24C02C6300F59EE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B75528E24C02C6300F59EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B75529024C02C6400F59EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B75529324C02C6400F59EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -273,8 +270,6 @@
 			children = (
 				1B75528424C02C6300F59EE0 /* AppDelegate.h */,
 				1B75528524C02C6300F59EE0 /* AppDelegate.m */,
-				1B75528A24C02C6300F59EE0 /* ViewController.h */,
-				1B75528B24C02C6300F59EE0 /* ViewController.m */,
 				1B53434C258491D8004BA8BA /* XCPedometer.pch */,
 				1B53434A2584916B004BA8BA /* Test */,
 				1B7552BC24C02EF000F59EE0 /* Common */,
@@ -682,11 +677,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */,
+				1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */,
+				1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */,
 				1B5937B7255A69BD007F3908 /* BaseTableViewCell.m in Sources */,
 				1BF5D2B72594867700044C27 /* XCNetworking.m in Sources */,
-				1B75528C24C02C6300F59EE0 /* ViewController.m in Sources */,
 				1BF5D35A259C150300044C27 /* BaseDB.m in Sources */,
-				1B75528624C02C6300F59EE0 /* AppDelegate.m in Sources */,
 				1BF5D350259C14D700044C27 /* UserInfo_DB.m in Sources */,
 				1B75529724C02C6400F59EE0 /* main.m in Sources */,
 				1B59375125552424007F3908 /* DBManager.m in Sources */,
@@ -699,7 +695,6 @@
 				1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */,
 				1BF5D2EB2595851000044C27 /* XCHttpRequest.m in Sources */,
 				1BD8AFB025A30E8300C1A269 /* Third_VC.m in Sources */,
-				1B593788255A4181007F3908 /* NavView_VC.m in Sources */,
 				1BF5D322259ABC0A00044C27 /* Register_VC.m in Sources */,
 				1BF5D2422591F9AE00044C27 /* XCWaterWaveView.m in Sources */,
 				1BF5D2DC25949C6D00044C27 /* XCProgress.m in Sources */,
@@ -708,7 +703,6 @@
 				1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */,
 				1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */,
 				1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */,
-				1B59376A255A3C41007F3908 /* TabBar_VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,7 +760,7 @@
 		1B7552AE24C02C6500F59EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -824,7 +818,7 @@
 		1B7552AF24C02C6500F59EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

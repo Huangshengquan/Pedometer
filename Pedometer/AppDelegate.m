@@ -7,13 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "Home_VC.h"
-#import "ViewController.h"
 #import "NavView_VC.h"
 #import "BaseDB.h"
 #import "Login_VC.h"
 #import "IQKeyboardManager.h"
 #import "Mine_VC.h"
+#import "TabBar_VC.h"
+
 
 @interface AppDelegate (){
     TabBar_VC *tabBar;
