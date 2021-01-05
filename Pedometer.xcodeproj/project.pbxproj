@@ -25,17 +25,24 @@
 		1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
 		1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
 		1B7F0C9125A404C500D35CFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
+		1B7F0CA625A42A0B00D35CFC /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */; };
+		1B7F0CA825A42A0B00D35CFC /* libDCURLRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */; };
+		1B7F0CAA25A42A0B00D35CFC /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA925A42A0B00D35CFC /* libFMDB.a */; };
+		1B7F0CAC25A42A0B00D35CFC /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */; };
+		1B7F0CAE25A42A0B00D35CFC /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */; };
+		1B7F0CB025A42A0B00D35CFC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */; };
+		1B7F0CB225A42A0B00D35CFC /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */; };
+		1B7F0CB425A42A0B00D35CFC /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */; };
+		1B7F0CB625A42A0B00D35CFC /* libToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB525A42A0B00D35CFC /* libToast.a */; };
 		1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA40B1425A306090038BEAF /* DCURLRouter.plist */; };
 		1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */; };
 		1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D65125A2CE44009FFFCC /* Forget_VC.m */; };
 		1BB407472591825D003EF042 /* Mynote in Resources */ = {isa = PBXBuildFile; fileRef = 1BB407462591825D003EF042 /* Mynote */; };
-		1BB407532591C888003EF042 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB407522591C888003EF042 /* WaterWaveView.m */; };
 		1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7F0AB258B46350017C6B8 /* XCPageView.m */; };
 		1BD8AFAA25A30AC700C1A269 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AFA925A30AC700C1A269 /* BaseViewController.m */; };
 		1BD8AFB025A30E8300C1A269 /* Third_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AFAF25A30E8300C1A269 /* Third_VC.m */; };
 		1BF5D2422591F9AE00044C27 /* XCWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */; };
 		1BF5D2B72594867700044C27 /* XCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2B62594867700044C27 /* XCNetworking.m */; };
-		1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */; };
 		1BF5D2DC25949C6D00044C27 /* XCProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2DB25949C6D00044C27 /* XCProgress.m */; };
 		1BF5D2EB2595851000044C27 /* XCHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D2EA2595851000044C27 /* XCHttpRequest.m */; };
 		1BF5D319259ABBF300044C27 /* Login_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5D318259ABBF300044C27 /* Login_VC.m */; };
@@ -101,14 +108,21 @@
 		1B7552BF24C02FB000F59EE0 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		1B7552C324C02FF800F59EE0 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		1B7552C424C0300700F59EE0 /* ConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacro.h; sourceTree = "<group>"; };
+		1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDCURLRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CA925A42A0B00D35CFC /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7F0CB525A42A0B00D35CFC /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA40B1425A306090038BEAF /* DCURLRouter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
 		1BA4D63925A2A711009FFFCC /* UserInfoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoEntity.h; sourceTree = "<group>"; };
 		1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoEntity.m; sourceTree = "<group>"; };
 		1BA4D65025A2CE44009FFFCC /* Forget_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forget_VC.h; sourceTree = "<group>"; };
 		1BA4D65125A2CE44009FFFCC /* Forget_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Forget_VC.m; sourceTree = "<group>"; };
 		1BB407462591825D003EF042 /* Mynote */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mynote; sourceTree = "<group>"; };
-		1BB407512591C888003EF042 /* WaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
-		1BB407522591C888003EF042 /* WaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
 		1BB7F0AA258B46350017C6B8 /* XCPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPageView.h; sourceTree = "<group>"; };
 		1BB7F0AB258B46350017C6B8 /* XCPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPageView.m; sourceTree = "<group>"; };
 		1BD8AFA825A30AC700C1A269 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -119,8 +133,6 @@
 		1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCWaterWaveView.m; sourceTree = "<group>"; };
 		1BF5D2B52594867700044C27 /* XCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCNetworking.h; sourceTree = "<group>"; };
 		1BF5D2B62594867700044C27 /* XCNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCNetworking.m; sourceTree = "<group>"; };
-		1BF5D2BC25948C8900044C27 /* XCHudDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHudDemoView.h; sourceTree = "<group>"; };
-		1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHudDemoView.m; sourceTree = "<group>"; };
 		1BF5D2DA25949C6D00044C27 /* XCProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCProgress.h; sourceTree = "<group>"; };
 		1BF5D2DB25949C6D00044C27 /* XCProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCProgress.m; sourceTree = "<group>"; };
 		1BF5D2E92595851000044C27 /* XCHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHttpRequest.h; sourceTree = "<group>"; };
@@ -143,8 +155,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B59374B2554FD86007F3908 /* libsqlite3.0.tbd in Frameworks */,
+				1B7F0CA625A42A0B00D35CFC /* libAFNetworking.a in Frameworks */,
+				1B7F0CA825A42A0B00D35CFC /* libDCURLRouter.a in Frameworks */,
+				1B7F0CAA25A42A0B00D35CFC /* libFMDB.a in Frameworks */,
+				1B7F0CAC25A42A0B00D35CFC /* libIQKeyboardManager.a in Frameworks */,
+				1B7F0CAE25A42A0B00D35CFC /* libMasonry.a in Frameworks */,
+				1B7F0CB025A42A0B00D35CFC /* libMBProgressHUD.a in Frameworks */,
+				1B7F0CB225A42A0B00D35CFC /* libMJRefresh.a in Frameworks */,
 				97A578E4955546B80147A1FE /* libPods-Pedometer.a in Frameworks */,
+				1B7F0CB425A42A0B00D35CFC /* libSDWebImage.a in Frameworks */,
+				1B7F0CB625A42A0B00D35CFC /* libToast.a in Frameworks */,
+				1B59374B2554FD86007F3908 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,8 +470,6 @@
 			children = (
 				1BB7F0AA258B46350017C6B8 /* XCPageView.h */,
 				1BB7F0AB258B46350017C6B8 /* XCPageView.m */,
-				1BB407512591C888003EF042 /* WaterWaveView.h */,
-				1BB407522591C888003EF042 /* WaterWaveView.m */,
 				1BF5D2402591F9AE00044C27 /* XCWaterWaveView.h */,
 				1BF5D2412591F9AE00044C27 /* XCWaterWaveView.m */,
 			);
@@ -466,8 +485,6 @@
 				1BF5D2EA2595851000044C27 /* XCHttpRequest.m */,
 				1BF5D2DA25949C6D00044C27 /* XCProgress.h */,
 				1BF5D2DB25949C6D00044C27 /* XCProgress.m */,
-				1BF5D2BC25948C8900044C27 /* XCHudDemoView.h */,
-				1BF5D2BD25948C8900044C27 /* XCHudDemoView.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -495,6 +512,15 @@
 		67F2BD80A2BB69B1BA59303D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */,
+				1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */,
+				1B7F0CA925A42A0B00D35CFC /* libFMDB.a */,
+				1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */,
+				1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */,
+				1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */,
+				1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */,
+				1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */,
+				1B7F0CB525A42A0B00D35CFC /* libToast.a */,
 				1B59374A2554FD86007F3908 /* libsqlite3.0.tbd */,
 				EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */,
 			);
@@ -689,7 +715,6 @@
 				1BF5D319259ABBF300044C27 /* Login_VC.m in Sources */,
 				1BD8AFAA25A30AC700C1A269 /* BaseViewController.m in Sources */,
 				1B53434325848ABD004BA8BA /* XCUtils.m in Sources */,
-				1BB407532591C888003EF042 /* WaterWaveView.m in Sources */,
 				1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */,
 				1B593771255A3D1B007F3908 /* Home_VC.m in Sources */,
 				1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */,
@@ -701,7 +726,6 @@
 				1B7F0C9125A404C500D35CFC /* AppDelegate.m in Sources */,
 				1B59377C255A3D71007F3908 /* Second_VC.m in Sources */,
 				1B59375C2558DBA6007F3908 /* SQLiteManager.m in Sources */,
-				1BF5D2BE25948C8A00044C27 /* XCHudDemoView.m in Sources */,
 				1B593782255A3D7F007F3908 /* Mine_VC.m in Sources */,
 				1BB7F0AC258B46350017C6B8 /* XCPageView.m in Sources */,
 			);

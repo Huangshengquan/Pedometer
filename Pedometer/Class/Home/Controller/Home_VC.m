@@ -9,7 +9,6 @@
 #import "Home_VC.h"
 #import <CoreMotion/CoreMotion.h>
 #import "XCPageView.h"
-#import "WaterWaveView.h"
 #import "XCWaterWaveView.h"
 
 
