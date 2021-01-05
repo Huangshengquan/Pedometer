@@ -25,15 +25,6 @@
 		1B7F0C3E25A3F40200D35CFC /* TabBar_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593769255A3C41007F3908 /* TabBar_VC.m */; };
 		1B7F0C8A25A3FFB500D35CFC /* NavView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B593787255A4181007F3908 /* NavView_VC.m */; };
 		1B7F0C9125A404C500D35CFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75528524C02C6300F59EE0 /* AppDelegate.m */; };
-		1B7F0CA625A42A0B00D35CFC /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */; };
-		1B7F0CA825A42A0B00D35CFC /* libDCURLRouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */; };
-		1B7F0CAA25A42A0B00D35CFC /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CA925A42A0B00D35CFC /* libFMDB.a */; };
-		1B7F0CAC25A42A0B00D35CFC /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */; };
-		1B7F0CAE25A42A0B00D35CFC /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */; };
-		1B7F0CB025A42A0B00D35CFC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */; };
-		1B7F0CB225A42A0B00D35CFC /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */; };
-		1B7F0CB425A42A0B00D35CFC /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */; };
-		1B7F0CB625A42A0B00D35CFC /* libToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7F0CB525A42A0B00D35CFC /* libToast.a */; };
 		1BA40B1525A306090038BEAF /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA40B1425A306090038BEAF /* DCURLRouter.plist */; };
 		1BA4D63B25A2A711009FFFCC /* UserInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */; };
 		1BA4D65225A2CE44009FFFCC /* Forget_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D65125A2CE44009FFFCC /* Forget_VC.m */; };
@@ -108,15 +99,6 @@
 		1B7552BF24C02FB000F59EE0 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		1B7552C324C02FF800F59EE0 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		1B7552C424C0300700F59EE0 /* ConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacro.h; sourceTree = "<group>"; };
-		1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDCURLRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CA925A42A0B00D35CFC /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7F0CB525A42A0B00D35CFC /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA40B1425A306090038BEAF /* DCURLRouter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
 		1BA4D63925A2A711009FFFCC /* UserInfoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoEntity.h; sourceTree = "<group>"; };
 		1BA4D63A25A2A711009FFFCC /* UserInfoEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoEntity.m; sourceTree = "<group>"; };
@@ -155,16 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7F0CA625A42A0B00D35CFC /* libAFNetworking.a in Frameworks */,
-				1B7F0CA825A42A0B00D35CFC /* libDCURLRouter.a in Frameworks */,
-				1B7F0CAA25A42A0B00D35CFC /* libFMDB.a in Frameworks */,
-				1B7F0CAC25A42A0B00D35CFC /* libIQKeyboardManager.a in Frameworks */,
-				1B7F0CAE25A42A0B00D35CFC /* libMasonry.a in Frameworks */,
-				1B7F0CB025A42A0B00D35CFC /* libMBProgressHUD.a in Frameworks */,
-				1B7F0CB225A42A0B00D35CFC /* libMJRefresh.a in Frameworks */,
 				97A578E4955546B80147A1FE /* libPods-Pedometer.a in Frameworks */,
-				1B7F0CB425A42A0B00D35CFC /* libSDWebImage.a in Frameworks */,
-				1B7F0CB625A42A0B00D35CFC /* libToast.a in Frameworks */,
 				1B59374B2554FD86007F3908 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,15 +485,6 @@
 		67F2BD80A2BB69B1BA59303D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B7F0CA525A42A0B00D35CFC /* libAFNetworking.a */,
-				1B7F0CA725A42A0B00D35CFC /* libDCURLRouter.a */,
-				1B7F0CA925A42A0B00D35CFC /* libFMDB.a */,
-				1B7F0CAB25A42A0B00D35CFC /* libIQKeyboardManager.a */,
-				1B7F0CAD25A42A0B00D35CFC /* libMasonry.a */,
-				1B7F0CAF25A42A0B00D35CFC /* libMBProgressHUD.a */,
-				1B7F0CB125A42A0B00D35CFC /* libMJRefresh.a */,
-				1B7F0CB325A42A0B00D35CFC /* libSDWebImage.a */,
-				1B7F0CB525A42A0B00D35CFC /* libToast.a */,
 				1B59374A2554FD86007F3908 /* libsqlite3.0.tbd */,
 				EEAE95447FAF733181AE8962 /* libPods-Pedometer.a */,
 			);
